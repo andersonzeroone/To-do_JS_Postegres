@@ -5,9 +5,9 @@ A listagem, inserção e exclusão são através dos métodos https, get, post e
 
 ### Para iniciar o projeto é preciso:
 
-* Instalar as dependência com "npm i "
-* Abrir a pasta do projeto no terminar e inicializar o servidor "npm start"
-* Abrir o arquivo index.js
+* Instalar as dependência com "npm i ";
+* Abrir a pasta do projeto no terminar e inicializar o servidor "npm start";
+* Abrir o arquivo index.js no navegador.
 
 ## Dependências:
 
