@@ -1,0 +1,132 @@
+html{
+    --bg:rgb(2,0,36);
+    --bgg:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,240,204,1) 0%, rgba(8,216,243,1) 100%);
+    --bg-title:black;
+    --bg-bnt:#eee;
+    --bg-bntcheck: #0077FF;
+    --bg-li:#eee;
+    --bg-licheck:#888;
+   
+}
+body{
+    background:var(--bg);
+    background: var(--bgg); 
+  
+}
+.header{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.title{
+ 
+    margin: 2%; 
+    padding: 0px 0px 3px 0px; 
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--bg-title)     
+}
+.bnt-check{
+    position: absolute;
+    float: right;
+    right: 3%;
+    top: 6%
+}
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey; 
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+input:checked + label {
+    background-color: var(--bg-bntcheck);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+.conteiner-input-bnt{
+    display: flex;
+    flex-direction: row;
+}
+.input{
+  height: 30px;
+  width: 350px;
+  margin: 0% 0% 1% 37%;
+
+}
+button{
+    color: var(--bg-bnt);
+    background-color: red;
+    font-weight: bold;
+    height: 36px;
+    width: 60px;
+    border-radius: 8px; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.4%; 
+    border: none;
+
+}
+.button:hover {
+    background-color: #bbb;
+   
+}
+ul li {
+    margin-top: 0.5%;
+    margin-left:30%; 
+    list-style-type: none;
+    cursor: pointer;
+    padding: 8px 8px 8px 12px;
+    background: var(--bg-li);
+    font-size: 18px;
+    transition: 0.2s;
+    width: 38%; 
+
+}
+
+ul li:hover {
+    background: rgb(201, 194, 194);
+}
+
+.close {
+    position: absolute;
+    right: 440px;
+    padding: 3px 16px 12px 16px;
+    font-weight: bold;
+    
+  }
+
+ ul li.checked {
+    background: var(--bg-licheck);
+    text-decoration: line-through;
+  }
