@@ -14,7 +14,7 @@ A listagem, inserção e exclusão são através dos métodos https, get, post e
    * [express](https://expressjs.com/pt-br/starter/installing.html);
    * [nodemon](https://www.npmjs.com/package/nodemon);
    * [nunjucks](https://mozilla.github.io/nunjucks/);
-   * [pg].(https://www.npmjs.com/package/pg) .(postegres)
+   * [pg](https://www.npmjs.com/package/pg) .(postegres)
 
 
 ## Imagens
