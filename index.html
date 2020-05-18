@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>To-do.js</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">TO-DO js</h1>
+        <div class="bnt-check">
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">Toggle</label>
+        </div>
+    </div>
+    <form class="conteiner-input-bnt"  action="/" method="POST">
+        <input 
+            class="input"
+            type="text"
+            name="task"
+            placeholder=" Digite sua tarefa ..."
+        >
+        <button>add</button>
+    </form>
+    <div id="app">
+        <ul>
+            {%for todo in todos%}
+            <li>{{todo.tasks}}
+                <span 
+                class="close"
+                action="/" 
+                method="PUT">x</span></li>
+            {%endfor%}
+        </ul>
+    </div>
+    <!-- <script src="scripts.js"></script> -->
+    <script src="darkMode.js"></script>
+</body>
+</html>
