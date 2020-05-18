@@ -1,14 +1,20 @@
 ## ToDo/DarkMode - JS
 
-O projeto consiste na criação de to-do (lista de tarefas), com Javascript, Css e html.
+O projeto é criação de um to-do (lista de tarefas), com Javascript, Css e html que armazena os dado em banco de dados.
+A listagem, inserção e exclusão são através dos métodos https, get, post e delete;
 
-Para Rodar o projeto basta abrir o arquivo main.js. As informações salvas no to-do são armazenadas no [localStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/Window.localStorage). É possivel vizualizar as informações no localStorage da sequinte forma:
+### Para iniciar o projeto é preciso:
 
+* Instalar as dependência com "npm i "
+* Abrir a pasta do projeto no terminar e inicializar o servidor "npm start"
+* Abrir o arquivo index.js
 
-* Abrir a seção desenvolverdor no navegador (F12);
-* Clicar na opção "aplication";
-* Acessar "LocalStorage";
+## Dependências:
 
+   * [express](https://expressjs.com/pt-br/starter/installing.html);
+   * [nodemon](https://www.npmjs.com/package/nodemon);
+   * [nunjucks](https://mozilla.github.io/nunjucks/);
+   * [pg].(https://www.npmjs.com/package/pg) .(postegres)
 
 
 ## Imagens
